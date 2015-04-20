@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>button</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/jscolor/jscolor.js"></script>
+</head>
+<body>
+
+<input class="color" id="color">
+
+
+<div id="clbh_phone_div" class="cbh-phone cbh-green cbh-show cbh-static"
+     onmouseout="javascript:highlightPhoneIcon(0);"
+     onmouseover="javascript:highlightPhoneIcon(1);"
+     style="top: 100px; left: 100px; display: block;">
+    <div class="cbh-ph-circle"></div>
+    <div class="cbh-ph-circle1"></div>
+    <div class="cbh-ph-circle2"></div>
+    <div class="cbh-ph-circle-fill"></div>
+    <div class="cbh-ph-img-circle"></div>
+
+</div>
+<div class="cbh-phone cbh-green cbh-show cbh-static"
+     onmouseout="javascript:highlightPhoneIcon(0);"
+     onmouseover="javascript:highlightPhoneIcon(1);"
+     style="top: 100px; left: 400px; display: block;">
+    <div class="cbh-ph-circle-blue"></div>
+    <div class="cbh-ph-circle1-blue"></div>
+    <div class="cbh-ph-circle2-blue"></div>
+    <div class="cbh-ph-circle-fill-blue"></div>
+    <div class="cbh-ph-img-circle-blue"></div>
+
+</div>
+<div class="cbh-phone cbh-green cbh-show cbh-static"
+     onmouseout="javascript:highlightPhoneIcon(0);"
+     onmouseover="javascript:highlightPhoneIcon(1);"
+     style="top: 100px; left: 700px; display: block;">
+    <div class="cbh-ph-circle-light-blue"></div>
+    <div class="cbh-ph-circle1-light-blue"></div>
+    <div class="cbh-ph-circle2-light-blue"></div>
+    <div class="cbh-ph-circle-fill-light-blue"></div>
+    <div class="cbh-ph-img-circle-light-blue"></div>
+
+</div>
+<div class="cbh-phone cbh-green cbh-show cbh-static"
+     onmouseout="javascript:highlightPhoneIcon(0);"
+     onmouseover="javascript:highlightPhoneIcon(1);"
+     style="top: 100px; left: 1000px; display: block;">
+    <div class="cbh-ph-circle-violet"></div>
+    <div class="cbh-ph-circle1-violet"></div>
+    <div class="cbh-ph-circle2-violet"></div>
+    <div class="cbh-ph-circle-fill-violet"></div>
+    <div class="cbh-ph-img-circle-violet"></div>
+
+</div>
+<div class="cbh-phone cbh-green cbh-show cbh-static"
+     onmouseout="javascript:highlightPhoneIcon(0);"
+     onmouseover="javascript:highlightPhoneIcon(1);"
+     style="top: 400px; left: 100px; display: block;">
+    <div class="cbh-ph-circle-red"></div>
+    <div class="cbh-ph-circle1-red"></div>
+    <div class="cbh-ph-circle2-red"></div>
+    <div class="cbh-ph-circle-fill-red"></div>
+    <div class="cbh-ph-img-circle-red"></div>
+
+</div>
+<div class="cbh-phone cbh-green cbh-show cbh-static"
+     onmouseout="javascript:highlightPhoneIcon(0);"
+     onmouseover="javascript:highlightPhoneIcon(1);"
+     style="top: 400px; left: 400px; display: block;">
+    <div class="cbh-ph-circle-pink"></div>
+    <div class="cbh-ph-circle1-pink"></div>
+    <div class="cbh-ph-circle2-pink"></div>
+    <div class="cbh-ph-circle-fill-pink"></div>
+    <div class="cbh-ph-img-circle-pink"></div>
+
+</div>
+<div class="cbh-phone cbh-green cbh-show cbh-static"
+     onmouseout="javascript:highlightPhoneIcon(0);"
+     onmouseover="javascript:highlightPhoneIcon(1);"
+     style="top: 400px; left: 700px; display: block;">
+    <div class="cbh-ph-circle-grass-green"></div>
+    <div class="cbh-ph-circle1-grass-green"></div>
+    <div class="cbh-ph-circle2-grass-green"></div>
+    <div class="cbh-ph-circle-fill-grass-green"></div>
+    <div class="cbh-ph-img-circle-grass-green"></div>
+
+</div>
+<div class="cbh-phone cbh-green cbh-show cbh-static"
+     onmouseout="javascript:highlightPhoneIcon(0);"
+     onmouseover="javascript:highlightPhoneIcon(1);"
+     style="top: 400px; left: 1000px; display: block;">
+    <div class="cbh-ph-circle-turquoise"></div>
+    <div class="cbh-ph-circle1-turquoise"></div>
+    <div class="cbh-ph-circle2-turquoise"></div>
+    <div class="cbh-ph-circle-fill-turquoise"></div>
+    <div class="cbh-ph-img-circle-turquoise"></div>
+
+</div>
+
+<a href="#" class="button-download">
+    <span class="button-download-title">Скачать для</span>
+    <span class="button-download-subtitle">Apple iOS</span>
+</a>
+<a href="#" class="button-download android">
+    <span class="button-download-title">Скачать для</span>
+    <span class="button-download-subtitle">Android</span>
+</a>
+
+
+
+<script>
+    function highlightPhoneIcon(id){
+        if (id==1){
+            $(".cbh-phone").addClass("cbh-hover");
+            $(".cbh-phone").removeClass("cbh-static");
+            // bt=false;
+        }else{
+            $(".cbh-phone").removeClass("cbh-hover");
+            $(".cbh-phone").addClass("cbh-static");
+//            bt=true;
+        }
+    }
+    var colorVal = $('#color').valueOf();
+    colorVal.on('change', function () {
+        var newColor = colorVal.val();
+        $('body').css ({
+            "background-color": '#'+newColor
+
+        })
+
+    })
+</script>
+</body>
+</html>
